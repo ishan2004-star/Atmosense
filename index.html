@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="location">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="countryInput" placeholder="Country">
+            <input type="submit" id="check" value="Go">
+            <button id="gpsBtn">📍 Use GPS</button>
+        </div>
+        <div class="flex">
+            <div class="top-section">
+                <div class="left-info">
+                    <h2 id="weatherCountry">Cityname</h2>
+                    <h2 id="temperature">0°<strong>C</strong></h2>
+                </div>
+                <div class="right-info">
+                    <img src="tempicons/clouds.svg" alt="" id="tempIcon">
+                    <h2 id="weatherDescription">Description</h2>
+                </div>
+            </div>
+            <ul class="features">
+            <li id="feelsLike">Feels Like: --</li>
+            <li id="humidity">Humidity: --</li>
+            <li id="longitude">Longitude: --</li>
+            <li id="latitude">Latitude: --</li>
+            <li id="windSpeed">Wind Speed: --</li>
+            <li id="pressure">Pressure: --</li>
+            <li id="visibility">Visibility: --</li>
+            <li id="tempMinMax">Min/Max Temp: --</li>
+            <li id="uvIndex">UV Index: --</li>
+            <li id="aqi">AQI: --</li>
+        </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
